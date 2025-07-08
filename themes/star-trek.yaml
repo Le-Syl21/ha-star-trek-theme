@@ -1,91 +1,116 @@
-# Star Trek LCARS Theme for Home Assistant
-# Installation automatique via HACS
+# 🖖 Star Trek LCARS Theme for Home Assistant
+# Version corrigée - VRAIE solution pour le menu noir sur noir
+# Le problème : sidebar-selected-icon-color était sombre sur fond sombre
 
 star-trek:
   # === COULEURS PRINCIPALES LCARS ===
   primary-color: "#FF9900"                    # Orange LCARS principal
-  accent-color: "#FFCC00"                     # Jaune LCARS
-  dark-primary-color: "#CC6600"               # Orange foncé
+  accent-color: "#FFCC00"                     # Jaune LCARS accent
+  dark-primary-color: "#CC7700"               # Orange foncé
   light-primary-color: "#FFBB33"              # Orange clair
   
-  # === COULEURS DE TEXTE ===
-  primary-text-color: "#FFFFFF"               # Blanc pour le texte principal
-  secondary-text-color: "#CCCCCC"             # Gris clair pour texte secondaire
-  text-primary-color: "#FFFFFF"               # Blanc
-  disabled-text-color: "#666666"              # Gris pour éléments désactivés
-  
   # === ARRIÈRE-PLANS ===
-  primary-background-color: "#000000"         # Noir profond spatial
-  secondary-background-color: "#111111"       # Noir légèrement éclairci
-  divider-color: "#333333"                    # Séparateurs
-  card-background-color: "#1a1a1a"            # Gris très foncé pour les cartes
-  paper-card-background-color: "#1a1a1a"      # Même couleur pour cohérence
+  primary-background-color: "#000000"         # Noir spatial principal
+  secondary-background-color: "#111111"       # Noir légèrement gris
+  card-background-color: "#0A0A0A"            # Fond des cartes
+  paper-card-background-color: "#0A0A0A"      # Fond des cartes paper
   
-  # === COULEURS D'ÉTAT LCARS ===
-  state-icon-color: "#FF9900"                 # Orange pour icônes normales
-  state-icon-active-color: "#FFCC00"          # Jaune pour icônes actives
-  state-icon-unavailable-color: "#666666"     # Gris pour indisponible
-  paper-item-icon-color: "#FF9900"            # Orange
-  paper-item-icon-active-color: "#FFCC00"     # Jaune actif
+  # === TEXTES ===
+  primary-text-color: "#FF9900"               # Texte principal orange
+  secondary-text-color: "#FFCC00"             # Texte secondaire jaune  
+  text-primary-color: "#FFFFFF"               # Texte blanc pour contraste
+  disabled-text-color: "#666666"              # Texte désactivé
   
-  # === COMMUTATEURS ET CONTRÔLES ===
-  switch-checked-color: "#FFCC00"             # Jaune quand activé
-  switch-unchecked-color: "#666666"           # Gris quand désactivé
-  switch-checked-track-color: "#FF9900"       # Piste orange quand activé
-  switch-unchecked-track-color: "#333333"     # Piste grise quand désactivé
-  slider-color: "#FF9900"                     # Orange pour les curseurs
-  slider-track-color: "#333333"               # Piste grise
-  slider-bar-color: "#FFCC00"                 # Barre jaune
+  # === SIDEBAR - VRAIE CORRECTION DU PROBLÈME ===
+  sidebar-background-color: "#000000"         # Fond sidebar noir
+  sidebar-text-color: "#FF9900"               # Texte sidebar orange normal
+  sidebar-icon-color: "#FF9900"               # Icônes sidebar orange normal
   
-  # === COULEURS DE STATUT ===
-  error-color: "#CC0000"                      # Rouge LCARS pour erreurs
+  # CORRECTION CLEF : Ces 2 variables contrôlent l'élément sélectionné
+  sidebar-selected-text-color: "#FFCC00"      # ✅ JAUNE pour texte sélectionné  
+  sidebar-selected-icon-color: "#FFCC00"      # ✅ JAUNE pour TOUT l'élément sélectionné
+  
+  # Ces variables n'existent PAS vraiment - supprimées :
+  # sidebar-selected-background-color: INEXISTANT
+  
+  # === NAVIGATION ET MENUS ===
+  paper-listbox-background-color: "#000000"   # Fond des listes
+  paper-listbox-color: "#FF9900"              # Texte des listes
+  paper-item-icon-color: "#FF9900"            # Icônes items normales
+  paper-item-icon-active-color: "#FFCC00"     # Icônes items actives
+  
+  # === ÉTATS ET STATUTS ===
+  state-icon-color: "#FF9900"                 # Icônes d'état orange
+  state-icon-active-color: "#FFCC00"          # Icônes actives jaune
+  state-icon-unavailable-color: "#666666"     # Icônes indisponibles
+  state-on-color: "#FFCC00"                   # États "on" jaune
+  state-off-color: "#FF9900"                  # États "off" orange
+  state-home-color: "#0099CC"                 # États "home" bleu LCARS
+  state-not-home-color: "#FF9900"             # États "not home" orange
+  state-unknown-color: "#666666"              # États inconnus gris
+  state-unavailable-color: "#666666"          # États indisponibles gris
+  state-alarm-disarmed-color: "#0099CC"       # Alarme désactivée bleu
+  state-alarm-armed-color: "#FFCC00"          # Alarme activée jaune
+  state-alarm-triggered-color: "#CC0000"      # Alarme déclenchée rouge
+  state-alarm-pending-color: "#FF9900"        # Alarme en attente orange
+  
+  # === BOUTONS ET CONTRÔLES ===
+  paper-toggle-button-checked-button-color: "#FFCC00"     # Toggle activé
+  paper-toggle-button-checked-bar-color: "#FFCC00"        # Barre toggle activée
+  paper-toggle-button-unchecked-button-color: "#666666"   # Toggle désactivé
+  paper-toggle-button-unchecked-bar-color: "#333333"      # Barre toggle désactivée
+  
+  # === SLIDERS ===
+  paper-slider-knob-color: "#FFCC00"          # Bouton slider jaune
+  paper-slider-knob-start-color: "#FFCC00"    # Début bouton slider
+  paper-slider-pin-color: "#FFCC00"           # Pin slider
+  paper-slider-active-color: "#FF9900"        # Partie active orange
+  paper-slider-secondary-color: "#0099CC"     # Partie secondaire bleue
+  paper-slider-container-color: "#333333"     # Container slider
+  
+  # === BORDURES ET SÉPARATEURS ===
+  divider-color: "#FF9900"                    # Séparateurs orange
+  table-row-background-color: "#0A0A0A"       # Fond lignes tableaux
+  table-row-alternative-background-color: "#151515"  # Lignes alternées
+  
+  # === EN-TÊTES ===
+  app-header-background-color: "#000000"      # Fond en-tête
+  app-header-text-color: "#FF9900"            # Texte en-tête orange
+  
+  # === ERREURS ET ALERTES ===
+  error-color: "#CC0000"                      # Rouge pour erreurs
   warning-color: "#FF9900"                    # Orange pour avertissements
-  success-color: "#00CC00"                    # Vert pour succès
-  info-color: "#0099CC"                       # Bleu LCARS pour informations
+  success-color: "#0099CC"                    # Bleu pour succès
+  info-color: "#FFCC00"                       # Jaune pour informations
   
-  # === NAVIGATION ET SIDEBAR ===
-  sidebar-background-color: "#000000"         # Noir
-  sidebar-icon-color: "#FF9900"               # Icônes orange
-  sidebar-text-color: "#FFFFFF"               # Texte blanc
-  sidebar-selected-background-color: "#FF9900" # Sélection orange
-  sidebar-selected-icon-color: "#000000"      # Icône noire sur sélection orange
-  sidebar-selected-text-color: "#000000"      # Texte noir sur sélection
+  # === GRAPHIQUES ===
+  paper-grey-50: "#000000"
+  paper-grey-200: "#333333"
+  label-badge-background-color: "#FF9900"     # Fond badges
+  label-badge-text-color: "#000000"           # Texte badges noir
+  label-badge-red: "#CC0000"                  # Badge rouge
+  label-badge-green: "#0099CC"                # Badge vert (remplacé par bleu LCARS)
+  label-badge-blue: "#0099CC"                 # Badge bleu LCARS
+  label-badge-yellow: "#FFCC00"               # Badge jaune LCARS
+  label-badge-grey: "#666666"                 # Badge gris
   
-  # === EN-TÊTE ===
-  app-header-background-color: "#000000"      # Fond noir
-  app-header-text-color: "#FFFFFF"            # Texte blanc
-  app-header-edit-background-color: "#FF9900" # Mode édition orange
-  app-header-edit-text-color: "#000000"       # Texte noir en mode édition
+  # === CARTES SPÉCIALES ===
+  ha-card-border-radius: "8px"                # Coins arrondis cartes
+  ha-card-box-shadow: "0 2px 8px rgba(255,153,0,0.3)"  # Ombre orange
   
-  # === BOUTONS MATERIAL DESIGN ===
-  mdc-theme-primary: "#FF9900"                # Boutons primaires orange
-  mdc-theme-secondary: "#FFCC00"              # Boutons secondaires jaune
-  mdc-theme-on-primary: "#000000"             # Texte sur boutons primaires
-  mdc-theme-on-secondary: "#000000"           # Texte sur boutons secondaires
+  # === VARIABLES SUPPLÉMENTAIRES POUR COMPATIBILITÉ ===
+  material-background-color: "#000000"        # Fond material
+  material-secondary-background-color: "#111111"  # Fond secondaire material
+  mdc-theme-primary: "#FF9900"                # Thème MDC primaire
+  mdc-theme-secondary: "#FFCC00"              # Thème MDC secondaire
+  mdc-theme-on-primary: "#000000"             # Texte sur primaire
+  mdc-theme-on-secondary: "#000000"           # Texte sur secondaire
   
-  # === GRAPHIQUES ET DONNÉES ===
-  label-badge-border-color: "#FF9900"         # Bordures orange
-  label-badge-background-color: "#1a1a1a"     # Fond sombre
-  label-badge-text-color: "#FFFFFF"           # Texte blanc
-  graph-color-1: "#FF9900"                    # Orange
-  graph-color-2: "#FFCC00"                    # Jaune
-  graph-color-3: "#0099CC"                    # Bleu LCARS
-  graph-color-4: "#CC0000"                    # Rouge LCARS
-  graph-color-5: "#00CC00"                    # Vert
-  
-  # === TABLES ET LISTES ===
-  table-row-background-color: "#1a1a1a"       # Lignes sombres
-  table-row-alternative-background-color: "#222222" # Alternance
-  data-table-background-color: "#000000"      # Fond de table
-  
-  # === MASQUAGE D'ÉLÉMENTS ===
-  iron-overlay-backdrop-opacity: "0.7"        # Opacité des overlays
-  
-  # === MODE SOMBRE ===
+  # === MODES DE COULEUR ===
   modes:
-    dark:
-      primary-color: "#FF9900"
-      accent-color: "#FFCC00"
+    light:
       primary-background-color: "#000000"
-      secondary-background-color: "#111111"
-      card-background-color: "#1a1a1a"
+      card-background-color: "#0A0A0A" 
+    dark:
+      primary-background-color: "#000000"
+      card-background-color: "#0A0A0A"
