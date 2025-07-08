@@ -1,0 +1,91 @@
+# Star Trek LCARS Theme for Home Assistant
+# Installation automatique via HACS
+
+star-trek:
+  # === COULEURS PRINCIPALES LCARS ===
+  primary-color: "#FF9900"                    # Orange LCARS principal
+  accent-color: "#FFCC00"                     # Jaune LCARS
+  dark-primary-color: "#CC6600"               # Orange foncé
+  light-primary-color: "#FFBB33"              # Orange clair
+  
+  # === COULEURS DE TEXTE ===
+  primary-text-color: "#FFFFFF"               # Blanc pour le texte principal
+  secondary-text-color: "#CCCCCC"             # Gris clair pour texte secondaire
+  text-primary-color: "#FFFFFF"               # Blanc
+  disabled-text-color: "#666666"              # Gris pour éléments désactivés
+  
+  # === ARRIÈRE-PLANS ===
+  primary-background-color: "#000000"         # Noir profond spatial
+  secondary-background-color: "#111111"       # Noir légèrement éclairci
+  divider-color: "#333333"                    # Séparateurs
+  card-background-color: "#1a1a1a"            # Gris très foncé pour les cartes
+  paper-card-background-color: "#1a1a1a"      # Même couleur pour cohérence
+  
+  # === COULEURS D'ÉTAT LCARS ===
+  state-icon-color: "#FF9900"                 # Orange pour icônes normales
+  state-icon-active-color: "#FFCC00"          # Jaune pour icônes actives
+  state-icon-unavailable-color: "#666666"     # Gris pour indisponible
+  paper-item-icon-color: "#FF9900"            # Orange
+  paper-item-icon-active-color: "#FFCC00"     # Jaune actif
+  
+  # === COMMUTATEURS ET CONTRÔLES ===
+  switch-checked-color: "#FFCC00"             # Jaune quand activé
+  switch-unchecked-color: "#666666"           # Gris quand désactivé
+  switch-checked-track-color: "#FF9900"       # Piste orange quand activé
+  switch-unchecked-track-color: "#333333"     # Piste grise quand désactivé
+  slider-color: "#FF9900"                     # Orange pour les curseurs
+  slider-track-color: "#333333"               # Piste grise
+  slider-bar-color: "#FFCC00"                 # Barre jaune
+  
+  # === COULEURS DE STATUT ===
+  error-color: "#CC0000"                      # Rouge LCARS pour erreurs
+  warning-color: "#FF9900"                    # Orange pour avertissements
+  success-color: "#00CC00"                    # Vert pour succès
+  info-color: "#0099CC"                       # Bleu LCARS pour informations
+  
+  # === NAVIGATION ET SIDEBAR ===
+  sidebar-background-color: "#000000"         # Noir
+  sidebar-icon-color: "#FF9900"               # Icônes orange
+  sidebar-text-color: "#FFFFFF"               # Texte blanc
+  sidebar-selected-background-color: "#FF9900" # Sélection orange
+  sidebar-selected-icon-color: "#000000"      # Icône noire sur sélection orange
+  sidebar-selected-text-color: "#000000"      # Texte noir sur sélection
+  
+  # === EN-TÊTE ===
+  app-header-background-color: "#000000"      # Fond noir
+  app-header-text-color: "#FFFFFF"            # Texte blanc
+  app-header-edit-background-color: "#FF9900" # Mode édition orange
+  app-header-edit-text-color: "#000000"       # Texte noir en mode édition
+  
+  # === BOUTONS MATERIAL DESIGN ===
+  mdc-theme-primary: "#FF9900"                # Boutons primaires orange
+  mdc-theme-secondary: "#FFCC00"              # Boutons secondaires jaune
+  mdc-theme-on-primary: "#000000"             # Texte sur boutons primaires
+  mdc-theme-on-secondary: "#000000"           # Texte sur boutons secondaires
+  
+  # === GRAPHIQUES ET DONNÉES ===
+  label-badge-border-color: "#FF9900"         # Bordures orange
+  label-badge-background-color: "#1a1a1a"     # Fond sombre
+  label-badge-text-color: "#FFFFFF"           # Texte blanc
+  graph-color-1: "#FF9900"                    # Orange
+  graph-color-2: "#FFCC00"                    # Jaune
+  graph-color-3: "#0099CC"                    # Bleu LCARS
+  graph-color-4: "#CC0000"                    # Rouge LCARS
+  graph-color-5: "#00CC00"                    # Vert
+  
+  # === TABLES ET LISTES ===
+  table-row-background-color: "#1a1a1a"       # Lignes sombres
+  table-row-alternative-background-color: "#222222" # Alternance
+  data-table-background-color: "#000000"      # Fond de table
+  
+  # === MASQUAGE D'ÉLÉMENTS ===
+  iron-overlay-backdrop-opacity: "0.7"        # Opacité des overlays
+  
+  # === MODE SOMBRE ===
+  modes:
+    dark:
+      primary-color: "#FF9900"
+      accent-color: "#FFCC00"
+      primary-background-color: "#000000"
+      secondary-background-color: "#111111"
+      card-background-color: "#1a1a1a"
